@@ -4,6 +4,8 @@ import java.util.List;
 
 public interface InterpreterRepository {
 
-    List<Interpreter> findInterpretersBySkillName(String skillName);
+    List<Interpreter> findAvailableInterpretersBySkillNameAndMinLevel(String skillName, String minSkillLevel);
+
+    void saveInterpreter(Interpreter interpreter);
 
 }
