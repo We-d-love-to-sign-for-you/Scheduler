@@ -1,5 +1,5 @@
 package org.wedlovetosignforyou;
 
-public interface JitsiUrlService {
+public interface VideoCallUrlService {
     String createNewJitsiUrl();
 }
