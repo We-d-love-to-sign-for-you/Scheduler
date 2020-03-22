@@ -11,12 +11,4 @@ public class ScheduleResponse {
     public void setInterpreter(Interpreter interpreter) {
         this.interpreter = interpreter;
     }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
 }
