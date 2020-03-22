@@ -25,7 +25,14 @@ public class ScheduleRequestHandler implements RequestHandler<ScheduleRequest, I
             interpreterRepository.saveInterpreter(interpreter);
             return  interpreter;
         }
+        throw new NoInterpretersAvailableExcpetion("No interpreters available for skill '" +
+                scheduleRequest.getSkillName() +
+                "' and skill level '" + scheduleRequest.getMinSkillLevel());
+    }
 
-        return null;
+    private class NoInterpretersAvailableExcpetion extends RuntimeException {
+        public NoInterpretersAvailableExcpetion(String s) {
+            super(s);
+        }
     }
 }
