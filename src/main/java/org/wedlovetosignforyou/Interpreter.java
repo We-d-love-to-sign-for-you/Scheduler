@@ -58,4 +58,5 @@ public class Interpreter {
     public void setVideoLink(String videoLink) {
         this.videoLink = videoLink;
     }
+
 }
