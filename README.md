@@ -1,4 +1,4 @@
-#Description
+# Description
 Takes a request such as 
 ```json
 {
@@ -22,12 +22,12 @@ and returns an available interperter with required skill and skill level:
 }
 ````
 
-#Build and Deploy
+# Build and Deploy
 - Build with `mvn clean package`
 - Upload .jar from target directory to AWS
 - Choose either Java 8 or Java 11 as runtime
 - Set handler to `org.wedlovetosignforyou.ScheduleRequestHandler::handleRequest`
 
-#Useful Links
+# Useful Links
 - [AWS Lambda Developer Guide](https://docs.aws.amazon.com/de_de/lambda/latest/dg/welcome.html)
 - [DynamoDB Developer Guide](https://docs.aws.amazon.com/de_de/amazondynamodb/latest/developerguide/Introduction.html)
