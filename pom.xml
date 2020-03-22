@@ -33,7 +33,22 @@
             <version>1.11.748</version>
         </dependency>
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>gitlab-maven</id>
+            <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+        </snapshotRepository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>

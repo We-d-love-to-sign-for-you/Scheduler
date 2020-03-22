@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.util.List;
 
-@DynamoDBTable(tableName = "InterpreterTable")
+@DynamoDBTable(tableName = "love2sign4you-dev-interpreter")
 public class Interpreter {
     private String id;
     private boolean available;
